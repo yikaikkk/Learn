@@ -214,7 +214,10 @@ static int dictCheckRehashingCompleted(dict *d) {
 
 ## 小结
 1、在redis中，hash表在处理哈希冲突时采用的是链式哈希
+
 2、当链式hash的某个桶的长度过长时，导致查询效率低下，因此redis采用渐进式hash的方式扩容
+
 3、redis中扩容大小为现在的2倍
+
 4、扩容条件 条件一：ht[0]的大小为 0。条件二：ht[0]承载的元素个数已经超过了 ht[0]的大小，同时 Hash 表可以进行扩容。条件三：ht[0]承载的元素个数，是 ht[0]的大小的 dict_force_resize_ratio 倍，其中，dict_force_resize_ratio 的默认值是 5。
 
