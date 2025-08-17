@@ -17,7 +17,7 @@ typedef struct zset {
 
 跳表是一种多重链表的数据数据结构
 
-![跳表](./static/skiplist.jpg "Magic Gardens")
+![跳表](./static/skiplist.jpg "skilplist")
 
 在redis中的跳表的定义如下
 
