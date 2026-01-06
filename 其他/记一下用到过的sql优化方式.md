@@ -32,3 +32,4 @@
 
 ## 慢sql优化
 
+在之前的文章中有记过mysql的慢sql优化[慢sql优化](http://guilinz.online/articles/164)
